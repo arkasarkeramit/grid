@@ -8,6 +8,7 @@ body {
 
 main {
   width: 1440px;
+  font-family: DM sans;
 }
 .container {
   display: grid;
@@ -23,8 +24,12 @@ main {
   display: flex;
   flex-direction: column;
   padding: 100px 0 100px 0;
-  border-radius: 10px;
+  border-radius: 20px;
   box-sizing: border-box;
+}
+
+.post-img {
+  text-align: center;
 }
 
 .post-img img {
@@ -33,7 +38,6 @@ main {
 }
 
 .title {
-  font-family: DM Sans;
   font-size: 3rem;
   padding: 0 80px 0 80px;
   box-sizing: border-box;
@@ -45,44 +49,108 @@ main {
   font-style: italic;
 }
 
+/* Box-1 End */
+
 .box-2 {
   grid-column: 4 / 10;
   grid-row: 1 /5;
-  background-color: aqua;
+  background-color: #7651dc;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
+
+.b2-title {
+  color: #ffffef;
+  font-size: 4rem;
+  text-align: center;
+  padding: 50px 50px 30px 50px;
+}
+
+.b2-title span {
+  color: #fcc963;
+}
+
+.b2-title .fast {
+  color: #ffffef;
+  font-style: italic;
+}
+
+.b2-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  color: #ffffef;
+}
+
+/* Box-2 END */
 
 .box-3 {
   grid-column: 10 / -1;
   grid-row: 1 /9;
-  background-color: aqua;
+  background-color: #dbd0fd;
+  border-radius: 20px;
+}
+
+.b3-title {
+  font-size: 2.5rem;
+  padding: 60px 20px 20px 40px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.b3-img {
+  overflow: hidden;
+  padding: 10px 0 10px 0;
+}
+
+.b3-img img {
+  height: 50vh;
+  width: auto;
+  margin-left: 45px;
+}
+
+.content {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 20px 45px 0px 50px;
 }
 
 .box-4 {
   grid-column: 1 / 4;
   grid-row: 7 /-1;
   background-color: aqua;
+  border-radius: 20px;
 }
 
 .box-5 {
   grid-column: 4 / 7;
   grid-row: 5 /9;
   background-color: aqua;
+  border-radius: 20px;
 }
 
 .box-6 {
   grid-column: 7 / 10;
   grid-row: 5 /9;
   background-color: aqua;
+  border-radius: 20px;
 }
 
 .box-7 {
   grid-column: 4 / 7;
   grid-row: 9 /-1;
   background-color: aqua;
+  border-radius: 20px;
 }
 
 .box-8 {
   grid-column: 7 / -1;
   grid-row: 9 /-1;
   background-color: aqua;
+  border-radius: 20px;
 }
