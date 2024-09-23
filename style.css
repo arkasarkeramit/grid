@@ -4,6 +4,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f5f5f5;
 }
 
 main {
@@ -37,9 +38,10 @@ main {
   margin: 30px;
 }
 
-.title {
+.title,
+.b4-title {
   font-size: 3rem;
-  padding: 0 80px 0 80px;
+  padding: 0 40px 0 40px;
   box-sizing: border-box;
   font-weight: 500;
 }
@@ -95,9 +97,11 @@ main {
   border-radius: 20px;
 }
 
-.b3-title {
+.b3-title,
+.b5-title,
+.b6-title {
   font-size: 2.5rem;
-  padding: 60px 20px 20px 40px;
+  padding: 30px 20px 10px 40px;
   box-sizing: border-box;
   font-weight: 500;
 }
@@ -120,25 +124,65 @@ main {
   padding: 20px 45px 0px 50px;
 }
 
+/* End Box-3 */
+
 .box-4 {
   grid-column: 1 / 4;
   grid-row: 7 /-1;
-  background-color: aqua;
+  background-color: #ffcc68;
   border-radius: 20px;
 }
+
+.b4-title {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.b4-img {
+  padding: 40px 20px 10px 30px;
+}
+
+.b4-img img {
+  height: 100%;
+  width: 100%;
+}
+/* End Box-4 */
 
 .box-5 {
   grid-column: 4 / 7;
   grid-row: 5 /9;
-  background-color: aqua;
+  background-color: #ffffff;
   border-radius: 20px;
+}
+.b5-img {
+  overflow: hidden;
+}
+.b5-img img {
+  height: 10vh;
+  width: auto;
+  padding: 40px 0px 0px 35px;
 }
 
 .box-6 {
   grid-column: 7 / 10;
   grid-row: 5 /9;
-  background-color: aqua;
+  background-color: #ffcc6a;
   border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.b6-img {
+  position: absolute;
+  top: 270px;
+  right: 10px;
+  left: 10px;
+}
+
+.b6-img img {
+  height: 100%;
+  width: 100%;
 }
 
 .box-7 {
