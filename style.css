@@ -16,23 +16,23 @@ main {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 25px;
+  max-height: 1000px;
 }
-
+/* Box-1 start */
 .box-1 {
   grid-column: 1 / 4;
   grid-row: 1 /7;
   background-color: #f9eee1;
   display: flex;
   flex-direction: column;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 100px 0;
   border-radius: 20px;
   box-sizing: border-box;
+  max-height: 500px;
 }
-
 .post-img {
   text-align: center;
 }
-
 .post-img img {
   max-width: 250px;
   margin: 30px;
@@ -53,6 +53,7 @@ main {
 
 /* Box-1 End */
 
+/* Box-2 Start */
 .box-2 {
   grid-column: 4 / 10;
   grid-row: 1 /5;
@@ -63,11 +64,11 @@ main {
 
 .b2-title {
   color: #ffffef;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
-  padding: 50px 50px 30px 50px;
+  padding: 20px 80px 30px 100px;
+ 
 }
-
 .b2-title span {
   color: #fcc963;
 }
@@ -90,6 +91,7 @@ main {
 
 /* Box-2 END */
 
+/* Box-3 Starts */
 .box-3 {
   grid-column: 10 / -1;
   grid-row: 1 /9;
@@ -100,54 +102,61 @@ main {
 .b3-title,
 .b5-title,
 .b6-title {
-  font-size: 2.5rem;
-  padding: 30px 20px 10px 40px;
+  font-size: 2rem;
+  padding: 30px 30px 10px 60px;
   box-sizing: border-box;
-  font-weight: 500;
+  font-weight: 700;
+ 
 }
-
 .b3-img {
   overflow: hidden;
-  padding: 10px 0 10px 0;
+
 }
 
 .b3-img img {
-  height: 50vh;
+  height: 37vh;
   width: auto;
-  margin-left: 45px;
+  margin-left: 100px;
 }
 
 .content {
   display: block;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 20px 45px 0px 50px;
+  padding: 0 45px 0px 50px;
 }
 
 /* End Box-3 */
+
+/* Box-4 Starts */
 
 .box-4 {
   grid-column: 1 / 4;
   grid-row: 7 /-1;
   background-color: #ffcc68;
-  border-radius: 20px;
+  border-radius: 20px; 
 }
 
 .b4-title {
-  padding-top: 30px;
-  padding-bottom: 40px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .b4-img {
-  padding: 40px 20px 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .b4-img img {
-  height: 100%;
-  width: 100%;
+  height: 27vh;
+  width: auto;
+  
 }
 /* End Box-4 */
 
+/* Box-5 start */
 .box-5 {
   grid-column: 4 / 7;
   grid-row: 5 /9;
@@ -162,7 +171,9 @@ main {
   width: auto;
   padding: 40px 0px 0px 35px;
 }
+/* Box-5 End */
 
+/* Box 6 Start  */
 .box-6 {
   grid-column: 7 / 10;
   grid-row: 5 /9;
@@ -173,9 +184,13 @@ main {
   overflow: hidden;
 }
 
+.b6-title{
+  padding-left: 50px;
+}
+
 .b6-img {
   position: absolute;
-  top: 270px;
+  top: 200px;
   right: 10px;
   left: 10px;
 }
@@ -184,12 +199,15 @@ main {
   height: 100%;
   width: 100%;
 }
+/* Box-6 End  */
 
+/* Box 7 Start  */
 .box-7 {
   grid-column: 4 / 7;
   grid-row: 9 /-1;
   background-color: #ffffff;
   border-radius: 20px;
+
 }
 
 .b7-title {
@@ -205,7 +223,7 @@ main {
 }
 
 .b7-img {
-  margin-top: 70px;
+  margin-top: 10px;
   margin-left: 40px;
 }
 
@@ -215,14 +233,18 @@ main {
   object-fit: cover;
 }
 
+/* Box-7 End  */
+
+/* Box 8 Start  */
 .box-8 {
   grid-column: 7 / -1;
   grid-row: 9 /-1;
   background-color: #7651dc;
   border-radius: 20px;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
+
 }
 
 .b8-img {
@@ -236,6 +258,7 @@ main {
 .b8-title {
   font-size: 2.5rem;
   padding-right: 10px;
-  font-weight: 400;
+  font-weight: 500;
   color: #fbfcfb;
 }
+/* Box-8 End  */
