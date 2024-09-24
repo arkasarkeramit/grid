@@ -103,9 +103,10 @@ main {
 .b5-title,
 .b6-title {
   font-size: 2rem;
-  padding: 30px 30px 10px 60px;
+  padding: 30px 40px 10px 60px;
   box-sizing: border-box;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: DM sans;
  
 }
 .b3-img {
@@ -167,9 +168,9 @@ main {
   overflow: hidden;
 }
 .b5-img img {
-  height: 10vh;
+  height: 8vh;
   width: auto;
-  padding: 40px 0px 0px 35px;
+  padding: 20px 0px 0px 50px;
 }
 /* Box-5 End */
 
